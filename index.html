@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mastery Journey | 4-Year Curriculum Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="neural-bg" id="neuralBg"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav-glass">
+        <div class="nav-brand">
+            <div class="brand-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+            </div>
+            <span>AI Mastery</span>
+        </div>
+        <div class="nav-links">
+            <a href="#hero" class="nav-link active">Overview</a>
+            <a href="#curriculum" class="nav-link">Curriculum</a>
+            <a href="#network" class="nav-link">Neural Map</a>
+            <a href="#tools" class="nav-link">Tech Stack</a>
+        </div>
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Comprehensive AI Education</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Master Artificial</span>
+                <span class="title-line gradient-text">Intelligence</span>
+            </h1>
+            <p class="hero-subtitle">
+                A four-year journey from Python fundamentals to advanced neural architectures. 
+                From data handling to multi-modal AI systems.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="4">0</span>
+                    <span class="stat-label">Years</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="24">0</span>
+                    <span class="stat-label">Core Modules</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="50">0</span>
+                    <span class="stat-label">+ Technologies</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <button class="btn btn-primary" onclick="scrollToSection('curriculum')">
+                    Explore Curriculum
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                    </svg>
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('network')">
+                    View Neural Map
+                </button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-cards">
+                <div class="float-card card-1">
+                    <div class="card-icon">🧠</div>
+                    <span>Deep Learning</span>
+                </div>
+                <div class="float-card card-2">
+                    <div class="card-icon">🤖</div>
+                    <span>NLP</span>
+                </div>
+                <div class="float-card card-3">
+                    <div class="card-icon">👁️</div>
+                    <span>Computer Vision</span>
+                </div>
+                <div class="float-card card-4">
+                    <div class="card-icon">⚡</div>
+                    <span>PyTorch</span>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <svg viewBox="0 0 400 400" class="neural-illustration">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ff006e;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#8338ec;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="200" cy="200" r="150" fill="none" stroke="url(#grad1)" stroke-width="1" opacity="0.3"/>
+                    <circle cx="200" cy="200" r="100" fill="none" stroke="url(#grad1)" stroke-width="1" opacity="0.5"/>
+                    <circle cx="200" cy="200" r="50" fill="none" stroke="url(#grad1)" stroke-width="2"/>
+                    <g class="nodes">
+                        <circle cx="200" cy="50" r="8" fill="#ff006e"/>
+                        <circle cx="320" cy="140" r="8" fill="#8338ec"/>
+                        <circle cx="320" cy="260" r="8" fill="#3a86ff"/>
+                        <circle cx="200" cy="350" r="8" fill="#06ffa5"/>
+                        <circle cx="80" cy="260" r="8" fill="#ffbe0b"/>
+                        <circle cx="80" cy="140" r="8" fill="#fb5607"/>
+                    </g>
+                    <g class="connections" stroke="url(#grad1)" stroke-width="1" opacity="0.6">
+                        <line x1="200" y1="50" x2="320" y2="140"/>
+                        <line x1="320" y1="140" x2="320" y2="260"/>
+                        <line x1="320" y1="260" x2="200" y2="350"/>
+                        <line x1="200" y1="350" x2="80" y2="260"/>
+                        <line x1="80" y1="260" x2="80" y2="140"/>
+                        <line x1="80" y1="140" x2="200" y2="50"/>
+                        <line x1="200" y1="50" x2="200" y2="200"/>
+                        <line x1="320" y1="140" x2="200" y2="200"/>
+                        <line x1="320" y1="260" x2="200" y2="200"/>
+                        <line x1="200" y1="350" x2="200" y2="200"/>
+                        <line x1="80" y1="260" x2="200" y2="200"/>
+                        <line x1="80" y1="140" x2="200" y2="200"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Timeline -->
+    <section id="curriculum" class="curriculum">
+        <div class="section-header">
+            <span class="section-tag">Learning Path</span>
+            <h2 class="section-title">Four-Year <span class="gradient-text">Curriculum</span></h2>
+            <p class="section-desc">Progressive mastery from fundamentals to cutting-edge AI</p>
+        </div>
+
+        <div class="timeline-container">
+            <!-- Year 1 -->
+            <div class="year-section" data-year="1">
+                <div class="year-marker">
+                    <div class="year-number">01</div>
+                    <div class="year-line"></div>
+                </div>
+                <div class="year-content">
+                    <div class="year-header">
+                        <h3>Foundation & Fundamentals</h3>
+                        <span class="year-badge">Core Skills</span>
+                    </div>
+                    <div class="modules-grid">
+                        <div class="module-card" data-tilt>
+                            <div class="module-icon gradient-bg-1">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <h4>AI Modelling & Communication Design</h4>
+                            <ul class="module-list">
+                                <li>Training & Learning Types</li>
+                                <li>Analytics vs Generative Models</li>
+                                <li>Cognitive Function Mimicry</li>
+                            </ul>
+                            <div class="module-tags">
+                                <span class="tag">Theory</span>
+                                <span class="tag">Design</span>
+                            </div>
+                        </div>
+
+                        <div class="module-card" data-tilt>
+                            <div class="module-icon gradient-bg-2">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/>
+                                </svg>
+                            </div>
+                            <h4>Intelligent Systems Python Programming</h4>
+                            <ul class="module-list">
+                                <li>Data Analysis & Manipulation</li>
+                                <li>NumPy, Pandas, Matplotlib</li>
+                                <li>Machine Learning with Scikit-learn</li>
+                            </ul>
+                            <div class="module-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Data</span>
+                            </div>
+                        </div>
+
+                        <div class="module-card" data-tilt>
+                            <div class="module-icon gradient-bg-3">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="4" y="4" width="16" height="16" rx="2"/>
+                                    <path d="M9 9h6v6H9z"/>
+                                    <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/>
+                                </svg>
+                            </div>
+                            <h4>Intelligent System Software Development</h4>
+                            <ul class="module-list">
+                                <li>Deep Learning & Neural Networks</li>
+                                <li>TensorFlow, PyTorch, Keras</li>
+                                <li>Data Representation (Vectors, Matrices, Tensors)</li>
+                            </ul>
+                            <div class="module-tags">
+                                <span class="tag">Deep Learning</span>
+                                <span class="tag">Frameworks</span>
+                            </div>
+                        </div>
+
+                        <div class="module-card" data-tilt>
+                            <div class="module-icon gradient-bg-4">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+                                </svg>
+                            </div>
+                            <h4>Linear Algebra & Probability</h4>
+                            <ul class="module-list">
+                                <li>Mathematical Foundations</li>
+                                <li>Statistical Analysis</li>
+                                <li>Algorithm Development</li>
+                            </ul>
+                            <div class="module-tags">
+                                <span class="tag">Math</span>
+                                <span class="tag">Statistics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Year 2 -->
+            <div class="year-section" data-year="2">
+                <div class="year-marker">
+                    <div class="year-number">02</div>
+                    <div class="year-line"></div>
+                </div>
+                <div class="year-content">
+                    <div class="year-header">
+                        <h3>Advanced Algorithms & Ethics</h3>
+                        <span class="year-badge">Specialization</span>
+                    </div>
+                    <div class="modules-grid">
+                        <div class="module-card" data-tilt>
+                            <div class="module-icon gradient-bg-5">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <h4>Neural Network Algorithms & Implementation</h4>
+                            <ul class="module-list">
+                                <li>Advanced Architectures</li>
+                                <li>Backpropagation Optimization</li>
+                                <li>Implementation Patterns</li>
+                            </ul>
+                            <div class="module-tags">
+                                <span class="tag">Advanced</span>
+                                <span class="tag">Architecture</span>
+                            </div>
+                        </div>
+
+                        <div class="module-card" data-tilt>
+                            <div class="module-icon gradient-bg-6">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <h4>Artificial Intelligence Ethics</h4>
+                            <ul class="module-list">
+                                <li>Human Value Alignment</li>
+                                <li>Societal Benefit & Harm Prevention</li>
+                                <li>Autonomy & Context Awareness</li>
+                            </ul>
+                            <div class="module-tags">
+                                <span class="tag">Ethics</span>
+                                <span class="tag">Policy</span>
+                            </div>
+                        </div>
+
+                        <div class="module-card" data-tilt>
+                            <div class="module-icon gradient-bg-1">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                                </svg>
+                            </div>
+                            <h4>Natural Language Processing</h4>
+                            <ul class="module-list">
+                                <li>Computational Linguistics</li>
+                                <li>Text Interpretation & Generation</li>
+                                <li>Virtual Assistants & Communication</li>
+                            </ul>
+                            <div class="module-tags">
+                                <span class="tag">NLP</span>
+                                <span class="tag">LLM</span>
+                            </div>
+                        </div>
+
+                        <div class="module-card" data-tilt>
+                            <div class="module-icon gradient-bg-2">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </div>
+                            <h4>Machine Vision & Image Processing</h4>
+                            <ul class="module-list">
+                                <li>Visual Data Capture & Analysis</li>
+                                <li>Industrial Automation</li>
+                                <li>Safety & Surveillance Systems</li>
+                            </ul>
+                            <div class="module-tags">
+                                <span class="tag">Computer Vision</span>
+                                <span class="tag">OpenCV</span>
+                            </div>
+                        </div>
+
+                        <div class="module-card" data-tilt>
+                            <div class="module-icon gradient-bg-3">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path d="M12 8v4M12 16h.01"/>
+                                </svg>
+                            </div>
+                            <h4>Intelligent Control System Development</h4>
+                            <ul class="module-list">
+                                <li>Complex Nonlinear Process Management</li>
+                                <li>ICS Architecture</li>
+                                <li>Uncertainty Handling</li>
+                            </ul>
+                            <div class="module-tags">
+                                <span class="tag">Control Systems</span>
+                                <span class="tag">Robotics</span>
+                            </div>
+                        </div>
+
+                        <div class="module-card" data-tilt>
+                            <div class="module-icon gradient-bg-4">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M2 12h20M2 12l5-5m-5 5l5 5"/>
+                                </svg>
+                            </div>
+                            <h4>Multi-agent VR Interaction Technology</h4>
+                            <ul class="module-list">
+                                <li>3D Immersive Environments</li>
+                                <li>AI Agents (LLMs) Coordination</li>
+                                <li>Scene Understanding & Vision</li>
+                            </ul>
+                            <div class="module-tags">
+                                <span class="tag">VR/AR</span>
+                                <span class="tag">Multi-Agent</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Year 3 -->
+            <div class="year-section" data-year="3">
+                <div class="year-marker">
+                    <div class="year-number">03</div>
+                    <div class="year-line"></div>
+                </div>
+                <div class="year-content">
+                    <div class="year-header">
+                        <h3>Deep Learning & Pattern Recognition</h3>
+                        <span class="year-badge">Expert Level</span>
+                    </div>
+                    <div class="modules-grid">
+                        <div class="module-card featured" data-tilt>
+                            <div class="module-icon gradient-bg-5">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <h4>Deep Learning Framework Technology</h4>
+                            <p class="module-desc">Essential software libraries with prebuilt components for designing and training complex models</p>
+                            <ul class="module-list">
+                                <li>PyTorch & TensorFlow Advanced</li>
+                                <li>Jax & Specialized Libraries</li>
+                                <li>Multi-day Program Design</li>
+                            </ul>
+                            <div class="module-tags">
+                                <span class="tag highlight">PyTorch</span>
+                                <span class="tag highlight">TensorFlow</span>
+                                <span class="tag">Jax</span>
+                            </div>
+                        </div>
+
+                        <div class="module-card" data-tilt>
+                            <div class="module-icon gradient-bg-6">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                                </svg>
+                            </div>
+                            <h4>AI System Training</h4>
+                            <ul class="module-list">
+                                <li>Specialized Training Programs</li>
+                                <li>Comprehensive Understanding</li>
+                                <li>Authorized Certification Paths</li>
+                            </ul>
+                            <div class="module-tags">
+                                <span class="tag">Training</span>
+                                <span class="tag">Certification</span>
+                            </div>
+                        </div>
+
+                        <div class="module-card" data-tilt>
+                            <div class="module-icon gradient-bg-1">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 4v6h6M23 20v-6h-6"/>
+                                    <path d="M20.49 9A9 9 0 005.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 013.51 15"/>
+                                </svg>
+                            </div>
+                            <h4>Machine Learning Pattern Recognition</h4>
+                            <ul class="module-list">
+                                <li>Algorithm Development</li>
+                                <li>Pattern Identification in Data</li>
+                                <li>Modern AI Driver</li>
+                            </ul>
+                            <div class="module-tags">
+                                <span class="tag">ML</span>
+                                <span class="tag">Patterns</span>
+                            </div>
+                        </div>
+
+                        <div class="module-card" data-tilt>
+                            <div class="module-icon gradient-bg-2">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                    <path d="M3 9h18M9 21V9"/>
+                                </svg>
+                            </div>
+                            <h4>Multi-Modal Data Annotation Technology</h4>
+                            <ul class="module-list">
+                                <li>Cross-Modal Synchronization</li>
+                                <li>Semantic Consistency</li>
+                                <li>Contextual Understanding</li>
+                            </ul>
+                            <div class="module-tags">
+                                <span class="tag">Multi-Modal</span>
+                                <span class="tag">Annotation</span>
+                            </div>
+                        </div>
+
+                        <div class="module-card" data-tilt>
+                            <div class="module-icon gradient-bg-3">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <h4>Generative Adversarial Learning Systems</h4>
+                            <ul class="module-list">
+                                <li>GAN Architecture</li>
+                                <li>Generator vs Discriminator</li>
+                                <li>Synthetic Data Creation</li>
+                            </ul>
+                            <div class="module-tags">
+                                <span class="tag">GANs</span>
+                                <span class="tag">Generative</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Year 4 -->
+            <div class="year-section" data-year="4">
+                <div class="year-marker">
+                    <div class="year-number">04</div>
+                    <div class="year-line"></div>
+                </div>
+                <div class="year-content">
+                    <div class="year-header">
+                        <h3>Capstone & Real-World Application</h3>
+                        <span class="year-badge">Mastery</span>
+                    </div>
+                    <div class="modules-grid final-year">
+                        <div class="module-card capstone" data-tilt>
+                            <div class="module-icon gradient-bg-4">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <h4>Specialty Practice</h4>
+                            <p class="module-desc">Real-world application of learned skills in specialized domains with industry partners</p>
+                            <div class="capstone-features">
+                                <div class="feature">
+                                    <span class="feature-icon">🏢</span>
+                                    <span>Industry Projects</span>
+                                </div>
+                                <div class="feature">
+                                    <span class="feature-icon">👥</span>
+                                    <span>Mentorship</span>
+                                </div>
+                                <div class="feature">
+                                    <span class="feature-icon">📊</span>
+                                    <span>Portfolio Dev</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="module-card capstone" data-tilt>
+                            <div class="module-icon gradient-bg-5">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                                    <polyline points="14 2 14 8 20 8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                    <polyline points="10 9 9 9 8 9"/>
+                                </svg>
+                            </div>
+                            <h4>Graduation Design</h4>
+                            <p class="module-desc">Comprehensive thesis project demonstrating mastery of AI concepts and innovation</p>
+                            <div class="capstone-features">
+                                <div class="feature">
+                                    <span class="feature-icon">🔬</span>
+                                    <span>Research</span>
+                                </div>
+                                <div class="feature">
+                                    <span class="feature-icon">💡</span>
+                                    <span>Innovation</span>
+                                </div>
+                                <div class="feature">
+                                    <span class="feature-icon">🎓</span>
+                                    <span>Defense</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Neural Network Visualization -->
+    <section id="network" class="network-section">
+        <div class="section-header light">
+            <span class="section-tag">Interactive</span>
+            <h2 class="section-title">Neural <span class="gradient-text">Architecture</span></h2>
+            <p class="section-desc">Visualizing the connections between concepts</p>
+        </div>
+        
+        <div class="network-container">
+            <canvas id="networkCanvas"></canvas>
+            <div class="network-overlay">
+                <div class="network-info">
+                    <h3>Multi-Modal AI System</h3>
+                    <p>Input: Text • Image • Audio • Video</p>
+                    <div class="flow-arrows">
+                        <span>Encoding →</span>
+                        <span>LLM Processing →</span>
+                        <span>Decoding</span>
+                    </div>
+                    <p>Output: Generated Content</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="tools" class="tech-stack">
+        <div class="section-header">
+            <span class="section-tag">Technologies</span>
+            <h2 class="section-title">Tools & <span class="gradient-text">Frameworks</span></h2>
+        </div>
+        
+        <div class="tech-grid">
+            <div class="tech-category">
+                <h3>Languages</h3>
+                <div class="tech-items">
+                    <div class="tech-item" data-tech="Python">
+                        <div class="tech-logo">🐍</div>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-item" data-tech="R">
+                        <div class="tech-logo">📊</div>
+                        <span>R</span>
+                    </div>
+                    <div class="tech-item" data-tech="Julia">
+                        <div class="tech-logo">⚡</div>
+                        <span>Julia</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h3>Deep Learning</h3>
+                <div class="tech-items">
+                    <div class="tech-item" data-tech="PyTorch">
+                        <div class="tech-logo">🔥</div>
+                        <span>PyTorch</span>
+                    </div>
+                    <div class="tech-item" data-tech="TensorFlow">
+                        <div class="tech-logo">📈</div>
+                        <span>TensorFlow</span>
+                    </div>
+                    <div class="tech-item" data-tech="Keras">
+                        <div class="tech-logo">🧠</div>
+                        <span>Keras</span>
+                    </div>
+                    <div class="tech-item" data-tech="Jax">
+                        <div class="tech-logo">🚀</div>
+                        <span>Jax</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h3>Data & ML</h3>
+                <div class="tech-items">
+                    <div class="tech-item" data-tech="NumPy">
+                        <div class="tech-logo">🔢</div>
+                        <span>NumPy</span>
+                    </div>
+                    <div class="tech-item" data-tech="Pandas">
+                        <div class="tech-logo">🐼</div>
+                        <span>Pandas</span>
+                    </div>
+                    <div class="tech-item" data-tech="Scikit-learn">
+                        <div class="tech-logo">🎯</div>
+                        <span>Scikit-learn</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h3>Visualization</h3>
+                <div class="tech-items">
+                    <div class="tech-item" data-tech="Matplotlib">
+                        <div class="tech-logo">📉</div>
+                        <span>Matplotlib</span>
+                    </div>
+                    <div class="tech-item" data-tech="Seaborn">
+                        <div class="tech-logo">🌊</div>
+                        <span>Seaborn</span>
+                    </div>
+                    <div class="tech-item" data-tech="OpenCV">
+                        <div class="tech-logo">👁️</div>
+                        <span>OpenCV</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="brand-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <span>AI Mastery Journey</span>
+            </div>
+            <p class="footer-text">From fundamentals to mastery. Your path to becoming an AI expert.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Curriculum</a>
+                <a href="#" class="footer-link">Resources</a>
+                <a href="#" class="footer-link">Community</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AI Mastery Program. Built with passion.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
